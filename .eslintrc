@@ -1,0 +1,45 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react", "prettier"],
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "env": {
+    "jest": true,
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "ecmaFeatures": {
+      "legacyDecorators": true,
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "16"
+    }
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/forbid-prop-types": [0, { "forbid": ["any"] }],
+    // 'react/prop-types': 0,
+    "react/require-default-props": "off",
+    "import/no-cycle": "off",
+    "no-unused-expressions": "off",
+    "no-shadow": "off",
+    "no-console": "off",
+    "react/jsx-props-no-spreading": "off",
+    "import/no-named-as-default": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-pascal-case": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/control-has-associated-label": "off"
+  }
+}
